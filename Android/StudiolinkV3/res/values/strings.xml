@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- App Info -->
+	<string name="branBT">BLUETOOTH ADDRESS</string> 
+	<string name="scottBT">BLUETOOTH ADDRESS</string> 
+    <string name="app_name">StudiolinkV3</string>
+    <string name="connectButton">Connect Bluetooth</string>
+    <string name="disconnectButton">Disconnect</string>
+    <string name="fireShutterButton">Fire Shutter!</string>
+    <string name="fireShutterTimer">Fire Shutter with Timer</string>
+    <string name="fireShutterInterval">Fire Shutter with Interval</string>
+    <string name="connecting">Connecting...</string>
+    <string name="connected">Connected</string>
+    <string name="cameraDisconnected">Camera Disconnected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="address">Address: </string>
+    <string name="camera">Camera: </string>
+    <string name="requestState">Requesting State...</string>
+    <string name="cancelFire">Cancel</string>
+    <string name="canceled">Action Canceled</string>    
+    
+<!-- Send -->
+    
+    <string name="fireShutter">Shutter firing...</string>
+    <string name="fireTimer">Timer firing...</string>
+    <string name="fireInterval">Interval firing...</string>
+    
+    <string name="intervalNumber">Interval shot: </string>
+    <string name="sendTimer">Set timer: </string>
+    <string name="sendIntervalDelay">Set interval delay: </string>
+    <string name="sendIntervalShots">Set interval shots: </string>
+    
+<!-- Receive -->
+    <string name="receiveTimer">Timer set: </string>
+    <string name="receiveTimerError">Error: Timer not set</string>
+    <string name="receiveIntervalDelay">Interval Delay Set: </string>
+    <string name="receiveIntervalShots">Interval Shots Set: </string>
+    <string name="receiveIntervalShot">Current Interval Shot: </string>
+    <string name="receiveIntervalShotsError">Error: Interval shots not set</string>
+    <string name="receiveIntervalDelayError">Error: Interval delay not set</string>
+    
+    <string name="firedShutter">Shutter fired</string>
+    <string name="firedTimer">Timer complete</string>
+    <string name="firedInterval">Interval complete</string>
+    
+    <string name="generalError">Error</string>
+    <string name="started">Session Opened</string>
+    <string name="intervalStopped">Interval stopped</string>
+    <string name="intervalStarted">Interval started</string>
+    <string name="intervalStatus">Interval Shot: </string>
+</resources>

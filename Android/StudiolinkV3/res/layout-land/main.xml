@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	
+	
+	<LinearLayout
+		android:id="@+id/leftLinearLayout"
+		android:orientation="vertical"
+		android:layout_height="fill_parent"
+		android:layout_weight="2" >
+	
+	
+		
+		
+		<RelativeLayout
+		    xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:id="@+id/RelativeLayout01" 
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentTop="true">
+
+		    <TextView 
+		    	android:id="@+id/debugLabel"
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true" 
+		        android:text="Debug Stream Here"/>
+		
+		    <TextView 
+		    	android:id="@+id/btStatusText"
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content" 
+		        android:layout_alignParentRight="true" 
+		        android:text="BT Status" />
+
+		</RelativeLayout>	
+	
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			
+			android:layout_weight="1"
+			android:layout_above="@+id/inputTable" 
+			android:background="#777777" >
+	
+			<ListView 
+				android:id="@+id/debugList"
+		  		android:cacheColorHint="#00000000"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:stackFromBottom="true"
+		        android:transcriptMode="alwaysScroll" />
+		        
+		 </LinearLayout>
+	        
+	     <TableLayout 
+	     	xmlns:android="http://schemas.android.com/apk/res/android"
+  			android:id="@+id/inputTable"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"
+  			android:stretchColumns="1"
+  			android:layout_alignParentBottom="true">
+  		
+  		<TableRow>
+  			<TextView
+           		android:layout_column="1"
+            	android:text="Timer Delay (sec): "
+            	android:padding="3dip" />
+            <EditText
+            	android:id="@+id/timerInput"
+  				android:layout_width="fill_parent"
+  				android:layout_height="35dip"
+  				android:digits="0123456789"
+  				android:background="@android:drawable/editbox_background"
+  				android:padding="3dip"/>
+  			<Button
+	       		android:id="@+id/sendTimer"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="35dip"
+	        	android:text="send" />
+  		</TableRow>
+  		
+  		<TableRow>
+  			<TextView
+           		android:layout_column="1"
+            	android:text="Interval Delay (sec): "
+            	android:padding="3dip" />
+            <EditText
+            	android:id="@+id/intervalInput"
+  				android:layout_width="fill_parent"
+  				android:layout_height="35dip"
+  				android:digits="0123456789"
+  				android:background="@android:drawable/editbox_background"
+  				android:padding="3dip"/>
+  			<Button
+	       		android:id="@+id/sendInterval"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="35dip"
+	        	android:text="send" />
+  		</TableRow>
+  		
+  		<TableRow>
+  			<TextView
+           		android:layout_column="1"
+            	android:text="Number of Shots: "
+            	android:padding="3dip" />
+            <EditText
+            	android:id="@+id/numberInput"
+  				android:layout_width="fill_parent"
+  				android:layout_height="35dip"
+  				android:digits="0123456789"
+  				android:background="@android:drawable/editbox_background"
+  				android:padding="3dip"/>
+  			<Button
+	       		android:id="@+id/sendNumber"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="35dip"
+	        	android:text="send" />
+  		</TableRow>
+  		
+  	</TableLayout>
+	
+	
+	</LinearLayout>
+	
+	<RelativeLayout
+		android:id="@+id/centerPadding"
+		android:layout_width="10px"
+		android:layout_height="fill_parent" >
+		
+	</RelativeLayout>
+	
+	
+	<LinearLayout
+		android:id="@+id/rightLinearLayout"
+		android:orientation="vertical"
+        android:layout_height="fill_parent"
+        android:layout_weight="2">
+        
+        
+
+        
+        <Button
+       		android:id="@+id/reqstate"
+        	android:layout_width="fill_parent"
+        	android:text="Request State"
+        	android:layout_above="@+id/connBT" 
+        	android:layout_weight="1"/>
+    	
+    	<Button
+  			android:id="@+id/connBT"
+        	android:layout_width="fill_parent"
+        	android:text="Connect Bluetooth"
+        	android:layout_above="@+id/toggleLayout" 
+        	android:layout_weight="1"/>
+    	     
+	    <LinearLayout
+	    	android:id="@+id/toggleLayout"
+	    	android:orientation="horizontal"
+	    	android:layout_width="fill_parent"
+	    	android:gravity="center_horizontal|bottom"
+	    	android:layout_above="@+id/shutterButton"
+	    	android:layout_weight="1">
+	    	
+	    	<ToggleButton
+	        	android:id="@+id/togTimer"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="fill_parent"
+	        	android:textOn="TIMER IS ON" 
+	        	android:textOff="TIMER IS OFF"
+	        	android:layout_weight="1"/>
+	        
+	        <ToggleButton
+	        	android:id="@+id/togInterval"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="fill_parent"
+	        	android:textOn="INTERVAL IS ON" 
+	        	android:textOff="INTERVAL IS OFF"
+	        	android:layout_weight="1"/>
+	        
+	    </LinearLayout>
+        
+		<Button
+	        android:id="@+id/shutterButton"
+	        android:layout_width="fill_parent"
+	       
+	        android:text="Fire Shutter!"
+	        android:layout_alignParentBottom="true"
+	        android:layout_weight="2"/>
+	        
+        
+        
+    </LinearLayout>
+	
+	
+	
+</LinearLayout>

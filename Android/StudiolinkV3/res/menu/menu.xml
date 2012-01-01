@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/setCamera"
+          android:title="Select Camera">
+          <menu>
+          		<group android:checkableBehavior="single">
+	          		<item android:id="@+id/setNikonD90"
+	                  	  android:title="Nikon D90" />
+	            	<item android:id="@+id/setCanonT2i"
+	                  	  android:title="Canon T2i" />
+	            </group>
+          </menu>
+    </item>
+    <item android:id="@+id/setBluetooth"
+          android:title="Set Bluetooth" >
+    	  <menu>
+	    		<group android:checkableBehavior="single">
+		    		<item android:id="@+id/setScottBT"
+		              	  android:title="Scott's BT" />
+		        	<item android:id="@+id/setBranBT"
+		                  android:title="Bran's BT" />
+		        </group>
+          </menu>
+    </item>
+    
+</menu>
